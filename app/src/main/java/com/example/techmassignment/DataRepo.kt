@@ -7,9 +7,14 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.IOException
 
+/**
+ * This class is responsible to read data from local file and update the live data
+ */
 class DataRepo {
     var loadingState = MutableLiveData<Boolean>()
     var filteredLiveData = MediatorLiveData<DataOfImagesBean>()
+
+
     /**
      * This method is use to get data from asset folder
      */

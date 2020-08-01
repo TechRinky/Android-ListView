@@ -10,7 +10,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
 
-
+/**
+ * This class is responsible to show data in list by using base adapter
+ */
 class DataListViewAdapter(rowList: ArrayList<DataOfImagesBean.Row>, context: Context) :
     BaseAdapter() {
     private var context: Context
@@ -53,6 +55,9 @@ class DataListViewAdapter(rowList: ArrayList<DataOfImagesBean.Row>, context: Con
         return rowList.size
     }
 
+    /**
+     * This class is responsible to handle the view
+     */
     private class ListRowHolder(row: View?) {
         val title: TextView
         val descrpTv: TextView
