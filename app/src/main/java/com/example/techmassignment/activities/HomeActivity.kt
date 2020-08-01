@@ -1,10 +1,14 @@
-package com.example.techmassignment
+package com.example.techmassignment.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.techmassignment.DataListViewAdapter
+import com.example.techmassignment.DataOfImagesBean
+import com.example.techmassignment.DataViewModel
+import com.example.techmassignment.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.progress_layout.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -25,7 +29,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        dataListViewAdapter = DataListViewAdapter(rowsList, this)
+        dataListViewAdapter =
+            DataListViewAdapter(rowsList, this)
         data_listview.adapter = dataListViewAdapter
     }
 
