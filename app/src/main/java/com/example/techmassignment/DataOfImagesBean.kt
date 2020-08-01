@@ -1,5 +1,8 @@
 package com.example.techmassignment
 
+/**
+ * This class is bean class
+ */
 class DataOfImagesBean{
     val rows: List<Row> ? = null
     val title: String = ""
